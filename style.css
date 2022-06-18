@@ -1,0 +1,134 @@
+body{
+    margin:0;
+    font-family: 'Baloo Bhaijaan 2', 'sans-serif';
+}
+nav{
+    width:100%;
+    display:inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #f7feff;
+    flex-direction: row-reverse;
+}
+nav span{
+    display: inline-block;
+    width:fit-content;
+    height: 40px;
+    padding:30px;
+    background-color: #f7feff;
+    transition: 0.6s;
+}
+
+nav img{
+    display:inline-block;
+    height:100px;
+    position: absolute;
+    right: 10%;
+}
+
+nav span:hover{
+    background-color: #23a698;
+    color:white;
+    font-size:1.5em
+}
+
+#intro{
+    display:flex;
+    flex-wrap: nowrap;
+    background-color: #23a698;
+    color:white;
+    text-shadow: 0 0 4px black;
+    height: calc(100vh - 100px);
+}
+
+#image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#intro img{
+    width:100%;
+}
+
+#intro div{
+    flex-basis:50%;
+}
+
+#welcome{
+    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#works{
+    display:flex;
+    flex-wrap: wrap;
+    background-color:white;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    height:100vh;
+}
+
+#works div{
+    box-shadow:0 2px 15px rgb(0 0 0 / 10%);
+    margin: 0 20px 40px 20px;
+    border-radius: 5%;
+    transition: 0.3s;
+    flex-basis:25%
+}
+
+#works div:hover{
+    transform:translate(0,-4%)
+}
+
+#works div img{
+    width:100%;
+    border-radius: inherit;
+}
+
+#works div p{
+    padding-left: 20px;
+}
+
+#works img{
+    width:100%;
+}
+
+#button1:hover{
+    background-color: #00ffff;
+}
+
+#button2:hover{
+    background-color: #00ffff;
+}
+
+#latest{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    box-shadow:0px 0px 2px black;
+    flex-basis: 30%;
+    text-align: center;
+    padding:60px 0 60px 0;
+    font-size:2.5rem;
+    height:100px;
+    position:re
+}
+
+@media(max-width:1130px){
+    #welcome{
+        flex-basis: 100%!important;
+    }
+    #image{
+        display:none;
+    }
+}
